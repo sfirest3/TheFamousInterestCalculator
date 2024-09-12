@@ -1,4 +1,4 @@
-Compound Interest Calculator
+The Famous Compound Interest Calculator
 
 Overview:
 The Famous Compound Interest Calculator is a webapp that lets users calculate their compound interest on their investments. Users can enter their principal amount, annual interest rate, and compounding frequency so they will be able to see how much they can make. 
