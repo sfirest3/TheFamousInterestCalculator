@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px auto 30px;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-shadow: 10px 4px 6px rgba(0, 0, 0, 0.5);
+  transform: rotate(-360deg);
+}
+
+header {
+  font-size: 30px;
+  padding: 10px;
+}
+
+footer {
+  font-style: italic;
+}
+
+main {
+  padding: 20px 10px 10px 10px;
+  background-image: radial-gradient(
+    rgb(240, 164, 98),
+    rgb(147, 219, 252),
+    rgb(0, 255, 204)
+  );
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 150px;
+  gap: 15px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}

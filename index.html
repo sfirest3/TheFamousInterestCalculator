@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interest</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <div>⭐⭐⭐⭐</div>
+        <div>𝕀𝕟𝕥𝕖𝕣𝕖𝕤𝕥 ℂ𝕒𝕝𝕔𝕦𝕝𝕒𝕥𝕠𝕣</div>
+        <div>⭐⭐⭐⭐</div>
+      </header>
+      <main>
+        <form>
+          <div>⭐𝕡𝕣𝕚𝕟𝕔𝕚𝕡𝕒𝕝:</div>
+          <input id="principal" />
+          <div>⭐𝕡𝕖𝕣𝕚𝕠𝕕 :</div>
+          <select id="period">
+            <option>---</option>
+            <option>Yearly</option>
+            <option>Quarterly</option>
+            <option>Monthly</option>
+            <option>Daily</option>
+          </select>
+          <div>⭐𝔸ℙℝ :</div>
+          <input type="range" id="apr" value="2" min="0.25" max="50"></input>
+
+          
+          <div>⭐𝕐𝕖𝕒𝕣𝕤 :</div>
+          <input type="number" id="years" />
+        </form>
+        <p>ʏᴏᴜʀ ɪɴᴛᴇʀᴇꜱᴛ ʀᴀᴛᴇ (ᴀᴘʀ) : <output id="accumulated" /></p>
+        <p>ᴛᴏᴛᴀʟ ɪꜱ: <output id="total" /></p>
+      </main>
+      <footer>
+        <div>© 2024</div>
+        <div><a href="https://codesandbox.io/p/sandbox/hg873v?">Code</a></div>
+      </footer>
+    </article>
+  </body>
+</html>
