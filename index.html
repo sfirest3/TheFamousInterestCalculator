@@ -3,39 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Interest</title>
+    <title>Interest Calculator</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <article>
       <header>
-        <div>⭐⭐⭐⭐</div>
-        <div>𝕀𝕟𝕥𝕖𝕣𝕖𝕤𝕥 ℂ𝕒𝕝𝕔𝕦𝕝𝕒𝕥𝕠𝕣</div>
-        <div>⭐⭐⭐⭐</div>
+        <div><font face="Courier">⭐⭐⭐⭐</font></div>
+        <div><font face="Verdana">Interest Calculator</font></div>
+        <div><font face="Courier">⭐⭐⭐⭐</font></div>
       </header>
       <main>
         <form>
-          <div>⭐𝕡𝕣𝕚𝕟𝕔𝕚𝕡𝕒𝕝:</div>
-          <input id="principal" />
-          <div>⭐𝕡𝕖𝕣𝕚𝕠𝕕 :</div>
+          <div>Principal:</div>
+          <input id="principal" type="number" />
+          <div>Compounding Period:</div>
           <select id="period">
-            <option>---</option>
-            <option>Yearly</option>
-            <option>Quarterly</option>
-            <option>Monthly</option>
-            <option>Daily</option>
+            <option value="">Select</option>
+            <option value="Yearly">Yearly</option>
+            <option value="Quarterly">Quarterly</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Daily">Daily</option>
           </select>
-          <div>⭐𝔸ℙℝ :</div>
-          <input type="range" id="apr" value="2" min="0.25" max="50"></input>
-
-          
-          <div>⭐𝕐𝕖𝕒𝕣𝕤 :</div>
-          <input type="number" id="years" />
+          <div>APR:</div>
+          <input type="range" id="apr" value="2" min="0.25" max="50" />
+          <div>Years:</div>
+          <input id="years" type="number" />
         </form>
-        <p>ʏᴏᴜʀ ɪɴᴛᴇʀᴇꜱᴛ ʀᴀᴛᴇ (ᴀᴘʀ) : <output id="accumulated" /></p>
-        <p>ᴛᴏᴛᴀʟ ɪꜱ: <output id="total" /></p>
+        <p>Interest Rate (APR): <output id="accumulated"></output></p>
+        <p>Interest Earned: <output id="interestEarned"></output></p>
+        <p>Total Amount: <output id="total"></output></p>
       </main>
       <footer>
         <div>© 2024</div>

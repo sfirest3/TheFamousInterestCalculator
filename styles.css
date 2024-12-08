@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url("https://m.media-amazon.com/images/I/81JikRw3uLL.jpg");
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
 }
 
 article {
@@ -9,33 +13,29 @@ article {
   grid-template-rows: 50px auto 30px;
 }
 
-header,
-footer {
+header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  text-shadow: 10px 4px 6px rgba(0, 0, 0, 0.5);
-  transform: rotate(-360deg);
-}
-
-header {
+  background-color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  animation: rotate360 2s linear infinite; /* Apply rotation animation only to the header */
   font-size: 30px;
   padding: 10px;
 }
 
 footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
   font-style: italic;
+  /* No animation applied to footer */
 }
 
 main {
-  padding: 20px 10px 10px 10px;
-  background-image: radial-gradient(
-    rgb(240, 164, 98),
-    rgb(147, 219, 252),
-    rgb(0, 255, 204)
-  );
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 form {
@@ -44,6 +44,19 @@ form {
   gap: 15px;
   width: 220px;
   margin: 0 auto;
+}
+
+output {
+  font-weight: bold;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 600px) {
